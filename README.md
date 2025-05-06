@@ -3,10 +3,6 @@
 Comprehensive **API Test Suite** for [Reqres](https://reqres.in/) using **Postman** and automated reporting with **Newman**.
 
 ---
-## Author
-
-**[Arifin Mahmud](https://www.linkedin.com/in/arifin-mahmud/)**  
-Aspiring QA Engineer | Passionate about quality, bugs, and clean test cases.
 
 ## 📌 Overview
 
@@ -44,11 +40,15 @@ Below is a snapshot of the HTML report generated after running the tests via New
 ## 🛠️ Running Tests Locally
 
 ### 1. Install Dependencies 
+`npm install -g newman newman-reporter-htmlextra`
 ### 2. Run the Collection
+`newman run Reqres.postman_collection.json -r htmlextra --reporter-htmlextra-export newman/index.html`
 ### 3. View the Report
 
 Make sure you have [Node.js](https://nodejs.org/) and Newman installed:
-```bash
-   npm install -g newman newman-reporter-htmlextra
-   newman run Reqres.postman_collection.json -r htmlextra --reporter-htmlextra-export newman/index.html
-   newman/index.html
+`newman/index.html`
+
+## Author $ Tester
+
+**[Arifin Mahmud](https://www.linkedin.com/in/arifin-mahmud/)**  
+Aspiring QA Engineer | Passionate about quality, bugs, and clean test cases.
